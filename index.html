@@ -1,18 +1,881 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pawan Kolhe</title>
+    <meta name="description" content="Hey! I'm Pawan Kolhe, a Web Development Engineer.">
+    
+    <!-- Viewport meta tag for Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Pawan Kolhe">
+    <meta property="og:description" content="Hey, I'm Pawan Kolhe. Building beautiful applications for the web!.">
+    <meta property="og:image" content="https://pawankolhe.com/img/pawankolhe.jpg">
+    <meta property="og:url" content="https://pawankolhe.com">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Montserrat" rel="stylesheet" type="text/css" property="stylesheet" media="all">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/footer-distributed.css" type="text/css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70143073-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-70143073-1');
+    </script>
 </head>
 
+
 <body>
+    <!-- Hamburger Menu (for mobile users) -->
+    <div id="hamburger_a">
+        <nav id="navigation_mobile_real">
+            <i id="hamburger" class="fas fa-bars"></i>
+        </nav>
+        <div id="menu">
+            <nav>
+                <a class="anchor-links" onclick="scrollToElement('container1')">About Me</a>
+                <a class="anchor-links" onclick="scrollToElement('container6')">Skills</a>
+                <a class="anchor-links" onclick="scrollToElement('container2')">Projects</a>
+                <a class="anchor-links" onclick="scrollToElement('container3')">Certifications</a>
+                <a class="anchor-links" onclick="scrollToElement('container4')">Contact Me</a>
+            </nav>
+        </div>
+    </div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <!-- For Parallax Effect (Pure CSS) -->
+    <div id="parallax-container">
+    
+    <!--==== NAVIGATION ====-->
+    <!-- Logo -->
+	<nav id="navigation_mobile">
+    	<a id="pawankolhe_heading_mobile">P</a>
+    </nav>
+    
+    <!-- Navigation Bar (for desktop browsers) -->
+    <nav id="navigation">
+        <a class="anchor-links" onclick="scrollToElement('container1')">About&nbsp;Me</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container2')">Projects</a><!--
+        --><a class="anchor-links" id="pawankolhe_heading">P</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container3')">Certifications</a><!--
+        --><a class="anchor-links" onclick="scrollToElement('container4')">Contact</a>
+    </nav>
+    
+    <!--==== HEADER ====-->
+    <header id="header">
+    	<canvas id="canvas"></canvas>
+    	
+        <div id="header_quote">
+            <p><a href="javascript:void(0)" class="typewrite" data-period="1200" data-type='[ "Web Developer.", "Front-End Engineer.", "JavaScript Developer.", "Cloud Enthusiast.", "Problem Solver." ]'><span class="wrap">Web Developer.</span></a><span class="cursor">&nbsp;</span></p>
+        </div>
+		<a onclick="scrollToElement('container1')">
+			<div class="scroll-downs">
+			  <div class="mousey">
+				<div class="scroller"></div>
+			  </div>
+			</div>
+		</a>
+    </header>
+    
+    <!--==== ABOUT ME ====-->
+    <div id="container1" class="container">
+    	<div class="inner_container">
+            <article class="article clearfix">
+                <h2 class="title">About Me</h2><hr>
+            	<img id="pawankolhe_img" alt="Pawan Kolhe" src="img/pawankolhe.jpg">
+                <p>Hey there! I'm <strong><span><span>Pawan</span>&nbsp;<span>Kolhe</span></span></strong>, a JavaScript Developer.</p><br>
+                <p>I 💛 working with <b>TypeScript</b> and <b>JavaScript</b>. I enjoy building web apps and learning the ecosystem around them. I've been developing websites for several years now and learning new skills along the way which help me become a better developer.</p><br>
+                <p>Have worked with Vue, React, Angular, Ionic and many other tools to create aesthetically pleasing, responsive and functional websites. I can use the power of Cloud Computing (particularly AWS) to deploy and scale software and IT infrastructure at scale. I pay close attention to details, and have a great understanding of what it takes to build great user-centric experiences.</p>
+				<br>
+                <p>I enjoy learning new technologies in the ever-changing computer science field and thrive to build upon my existing knowledge with experience.</p><br>
+                <p>Get in touch at <a class="underline" id="aboutMeEmail" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a></p>
+                <br>
+                
+                <!-- Other Profile Links -->
+                <div class="buttonAboutMeBox">
+                    <!-- GitHub -->
+				    <a href="https://github.com/PawanKolhe" target="_blank"><button class="buttonAboutMe"><i class="fab fa-github fa-lg"></i></button></a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/kolhepawan/" target="_blank"><button class="buttonAboutMe"><i class="fab fa-linkedin-in fa-lg"></i></button></a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/Pawan_Kolhe" target="_blank"><button class="buttonAboutMe"><i class="fab fa-twitter fa-lg"></i></button></a>
+                    <!-- Instagram (hides on mobile) -->
+                    <a href="https://www.instagram.com/pawan_kolhe/" target="_blank" class="hideAt500"><button class="buttonAboutMe"><i class="fab fa-instagram fa-lg"></i></button></a>
+                    <!-- Facebook (hides on mobile) -->
+                    <a href="https://www.facebook.com/pawankolhe" target="_blank" class="hideAt500"><button class="buttonAboutMe"><i class="fab fa-facebook fa-lg"></i></button></a>
+                    <!-- Codechef (hides on mobile) -->
+				    <a href="https://www.codechef.com/users/pawankolhe" target="_blank" class="hideAt500"><button class="buttonAboutMe"><span class="iconify" data-icon="simple-icons:codechef" data-inline="false"></span></button></a>
+                </div>
+            </article>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p> Hello World! I’m Shubham Samrat IITian. This is my first website!</p>
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer1">
+                <img src="img/icons/html-coding.svg" style="width: 400px;" />
+            </div>
+            <div class="floating-icons" id="floatLayer2">
+                <img src="img/icons/binary-code.svg" style="width: 300px;" />
+            </div>
+        </div>
+    </div>
+    
+    <!--==== MY DEV TOOLKIT ====-->
+    <div id="container5" class="container">
+    	<div class="inner_container">
+            <article class="article clearfix">
+                <h2 class="title">My Dev Toolkit</h2><hr>
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <img class="padding_top" style="height: 80px;" src="img/icons/js.png">
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>JavaScript</b></p>
+                    </div>
+                </div>
 
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <img class="padding_top" style="height: 80px;" src="img/icons/nodejs.png">
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Node.js</b></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <img class="padding_top" style="height: 80px;" src="img/icons/vscode.png">
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>VS Code</b></p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <img class="padding_top" style="height: 80px;" src="img/icons/aws.png">
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>AWS Cloud</b></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <img class="padding_top" style="height: 80px;" src="img/icons/github.png">
+                        <div class="overlay">&nbsp;</div>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>GitHub</b></p>
+                    </div>
+                </div>
+            </article>
+            
+       </div>
+    </div>
+    
+    <!--==== SKILLS ====-->
+    <div id="container6" class="container">
+    	<div class="inner_container">
+            <article class="article clearfix">
+                <h2 class="title">Skills</h2><hr>
+				
+				<div class="boxes_text">
+					<p>Programming Languages</p>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>JavaScript</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>TypeScript</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Python</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>PHP</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Java</span></p>
+                    </div>
+                </div>
+				
+				<div class="boxes_text">
+					<p>Web Development</p>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>React</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Redux</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Next.js</span></p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Vue</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Angular</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Ionic</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Sass</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Express</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Jest</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>GraphQL</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>REST API</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Gulp</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Rollup</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Webpack</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Parcel</span></p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>CSS</span></p>
+                    </div>
+                </div>
+
+				<div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Bootstrap</span></p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>HTML</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Git</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>GitHub</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>PWA</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Firebase</span></p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>MySQL</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>SEO</span></p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Figma</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes_text">
+					<p>Cloud / DevOps</p>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>AWS Cloud</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Docker</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>Jenkins</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>CircleCI</span></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_text_light">
+                    	<p><span>CI/CD</span></p>
+                    </div>
+                </div>
+
+            </article>
+            
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer7">
+                <img src="img/icons/skill.svg" style="width: 850px;" />
+            </div>
+        </div>
+    </div>
+    
+    <!--==== PROJECTS ====-->
+    <div id="container2" class="container">
+    	<div class="inner_container">
+            <article class="article clearfix">
+                <h2 class="title">Projects</h2><hr>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://play.google.com/store/apps/details?id=com.reportcard.student" target="_blank">
+                            <img alt="Classcard Student App" src="img/projects/classcardStudentApp.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p><b>Classcard Student App</b>, a cross-platform mobile app for iOS and Android built with <b>Ionic</b> and <b>Angular</b>.</p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/color-calendar" target="_blank">
+                            <img alt="Color Calendar" src="img/projects/color-calendar.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p><b>Color Calendar</b>, a JavaScript calendar library. A customizable events calendar component library available on <b>NPM</b> and as CDN.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/BoardX" target="_blank">
+                            <img alt="BoardX" src="img/projects/boardx.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p><b>BoardX</b> is a kanban board web app for managing project tasks in lists with drag-n-drop cards.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/MLH-Fellowship/fellow-central" target="_blank">
+                            <img alt="Color Calendar" src="img/projects/fellow-central.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Platform for MLH Fellows to earn points for various activities such as discord discussions (tracked via discord bot) and attending events. Built using <b>React</b>, <b>Redux</b>, <b>Flask</b>, and <b>PostgreSQL</b></p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/AlphaByte-dev/alphabyte-website" target="_blank">
+                            <img alt="AlphaByte website" src="img/projects/AlphaByte-Website.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Website of AlphaByte, student tech community of Amity University Mumbai. Used <b>Gulp</b> for automating build tasks.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://gssoc.tech" target="_blank">
+                            <img alt="Personal Website" src="img/projects/gssoc.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Website redesign of GSSoC website with added features such as project search and profile lookup including score calculation based on data fetched from <b>Github REST API</b>.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/amizone-fetch-api" target="_blank">
+                            <img alt="BoardX" src="img/projects/amizoneFetchAPI.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>REST API to fetch data from Amizone using <b>puppeteer</b>, built using <b>Express</b>.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/funsigns-frontend" target="_blank">
+                            <img alt="CherryBite" src="img/projects/funsigns.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Funsigns is a reward-based web platform where students can enjoy doing assignments while earning rewards. Build using <b>React</b> & <b>Strapi</b>. Winner of <a href="https://incubateind.com/hack/amitymumbai" target="_blank">CIS: AUM</a> hackathon.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/cherry-bite" target="_blank">
+                            <img alt="CherryBite" src="img/projects/cherrybite.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>A website to discover new recipes. Built during MLH Holiday Hacks hackathon. Created using <b>React</b> and <b>Strapi</b>.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/IPL-Data-Challenge" target="_blank">
+                            <img alt="IPL Data Visualization" src="img/projects/socialcops.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>IPL Data Visualization dashboard which extracts and visualizes data from IPL dataset fetched in CSV format. It is a <b>PWA</b> created using <b>ReactJS</b> and <b>Chart.js</b>.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/calc-2000" target="_blank">
+                            <img alt="Personal Website" src="img/projects/calc2000.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Calculator <b>chrome extension</b> made to mimic the style of Windows 10 calculator, created using vanilla JavaScript and CSS.</p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/Personal-Website" target="_blank">
+                            <img alt="Personal Website" src="img/projects/personal-website.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>Personal Website to showcase my projects and achievements. Deployed on <b>AWS S3 bucket</b>, via AWS CodePipeline CI/CD and distribute it through <b>CloudFront CDN</b>.</p>
+                    </div>
+                </div>
+				
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/cat-search" target="_blank">
+                            <img alt="Cat Search" src="img/projects/catsearch.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p><b>React</b> web application that loads random cats avatars with their respective name using RoboHash and uinames <b>API</b>.</p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/webbattle-event" target="_blank">
+                            <img alt="HiddenRamp WebBattle" src="img/projects/hiddenramp.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p>6-page event management <b>static website</b> from scratch in <b>24 hours non-stop</b> as part of an online web development competition with focus on UI &amp; UX.</p>
+                    </div>
+                </div>
+                				
+				<div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/PUBG-Tournament" target="_blank">
+                            <img alt="PUBG Tournament Registration Website" src="img/projects/projectPUBG.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p>Tournament Info &amp; Registration Page <b>HTML5 and CSS template</b> created for a PUBG tournament with interactive <b>form validation</b>.</p>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/rocket-league-india" target="_blank">
+                            <img alt="Rocket League India" src="img/projects/rocketleagueindia.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                        <p><b>Static Website</b> and <b>Logo</b> for Rocket League India, a gaming community based around the game Rocket League.</p>
+                    </div>
+                </div>
+               
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/brookside-mechanical" target="_blank">
+                            <img alt="Brookside Mechanical" src="img/projects/brookside.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Static Website</b> and <b>Logo</b> for a refrigeration and heating company.</p>
+                    </div>
+                </div>
+				
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://github.com/PawanKolhe/Fee-Management-System" target="_blank">
+                            <img alt="Fee Management System" src="img/projects/project1.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Fee Management System</b> which allows students to pay tuition fees and an admin panel to manage and track student accounts. <b>PHP</b> used for backend and session management.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://drive.google.com/file/d/1gqK_Md-L-2jPp_glazdbVgnVxYfqdjz8/view?usp=sharing" target="_blank">
+                            <img alt="1NE Sponsor Pack" src="img/projects/1ne-sponsor-pack.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p>Fully designed the <b>Sponsorship Deck</b> for an eSports tournament, the Asia Pro League.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://drive.google.com/drive/folders/1ETWrX1voFogcnppX-b-BhYq1jT5bDyRT?usp=sharing" target="_blank">
+                            <img alt="Heuristic UX Evaluation Report" src="img/projects/ux-coursera.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Heuristic UX Evaluation Report</b> of the Coursera Discussion Board.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://drive.google.com/file/d/1f0ySYmbi0X9zdPL7heAlWaSONciCE2MU/view?usp=sharing" target="_blank">
+                            <img alt="10000 floor elevator" src="img/projects/elevator.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Interface sketches</b> for 10,000 floor elevator (UX Project).</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://drive.google.com/open?id=1h4S0TRi7aEItRCehA5LGGRYUSJfjipco" target="_blank">
+                            <img alt="bWAPP" src="img/projects/epwa.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p>Exploiting and Protecting Web Application project <b>security report</b> of exploiting buggy web application named bWAPP.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://drive.google.com/drive/folders/1HJPmjJo-BSB4Fzdh3vCMFeI3AYAVY24N?usp=sharing" target="_blank">
+                            <img alt="Network Security" src="img/projects/network-security.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Vulnerability Assessment</b> of Metasploitable, an intentionally vulnerable Linux virtual machine, and <b>Exploitation</b> of Running Vulnerable Services using Metasploit and Meterpreter.</p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://1neluxury.com" target="_blank">
+                            <img alt="1NE Luxury" src="img/projects/1neluxury.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Wordpress website</b> using pre-made theme for 1NE Luxury, customized with custom CSS and Javascript.</p>
+                    </div>
+                </div>
+				
+				<div class="boxes">
+                    <div class="boxes_img">
+                        <a href="https://sunshinesamuivillas.com" target="_blank">
+                            <img alt="Sunshine Samui Villas" src="img/projects/ssv.jpg" width="300" height="300">
+                            <div class="overlay">&nbsp;</div>
+                        </a>
+                    </div>
+                    <div class="boxes_text">
+                    	<p><b>Wordpress website</b> using pre-made theme for Sunshine Samui Villas, customized with custom CSS and Javascript.</p>
+                    </div>
+                </div>	
+                
+            </article>
+
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer3">
+                <img src="img/icons/rocket.svg" style="width: 1050px;" />
+            </div>
+            <div class="floating-icons" id="floatLayer4">
+                <img src="img/icons/stars.svg" style="width: 300px;" />
+            </div>
+       </div>
+    </div>
+    
+    <!--==== CERTIFICATIONS ====-->
+    <div id="container3" class="container">
+    	<div class="inner_container">
+        	<h2 class="title">Certifications</h2><hr>
+        	<div>
+				<div class="box"><a href="img/certifications/AWS-SAA-large.png"><img alt="AWS Certified Solutions Architect Associate" src="img/certifications/AWS-SAA-small.jpg"></a></div>
+				<div class="box"><a href="img/certifications/cloud-devops.png"><img alt="Udacity Cloud DevOps Engineer Nanodegree" src="img/certifications/cloud-devops.jpg"></a></div>
+                <div class="box"><a href="img/certifications/CCNA-large.png"><img alt="Cisco Certified Network Associate" src="img/certifications/CCNA-small.jpg"></a></div>
+                <div class="box"><a href="img/certifications/Stanford-ACS-large.png"><img alt="Cisco Certified Network Associate" src="img/certifications/Stanford-ACS-small.jpg"></a></div>
+                <div class="box"><a href="img/certifications/AWS-CPP-large.png"><img alt="AWS Certified Cloud Practitioner" src="img/certifications/AWS-CPP-small.jpg"></a></div>
+				<div class="box"><a href="https://www.coursera.org/account/accomplishments/records/SXJZN97JRZUG"><img alt="Coursera Computational Thinking" src="img/certifications/Coursera-Comp_Thinking.jpg"></a></div>
+				<div class="box"><a href="https://www.coursera.org/account/accomplishments/records/JPW6E7B3HJRL"><img alt="Coursera UX" src="img/certifications/Coursera_UX_1-1.jpg"></a></div>
+				<div class="box"><a href="https://www.freecodecamp.org/certification/pawankolhe/responsive-web-design"><img alt="FreeCodeCamp" src="img/certifications/FCC_RWD.jpg"></a></div>
+				<div class="box"><a href="img/certifications/MTA-large.png"><img alt="Microsoft Technology Associate" src="img/certifications/MTA-small.jpg"></a></div>
+                <div class="box"><a href="img/certifications/digital-unlocked-large.png"><img alt="Digital Unlocked" src="img/certifications/digital-unlocked-small.jpg"></a></div>
+            </div>
+
+            <!-- Parallax Images -->
+            <div class="floating-icons" id="floatLayer5">
+                <img src="img/icons/medal.svg" style="width: 650px;" />
+            </div>
+            <div class="floating-icons" id="floatLayer6">
+                <img src="img/icons/shining.svg" style="width: 250px;" />
+            </div>
+        </div>
+    </div>
+    
+    <!--==== CONTACT ME ====-->
+    <div id="container4" class="container">
+    	<div class="inner_container">
+        
+            <h2 class="title">Contact Me</h2><hr>
+            
+            <div class="grid-container">
+                <div class="grid-child item-big">
+                    <div class="grid-item-title">Message Me</div>
+                    <div class="grid-item-content">
+                        <form id="formRegister" name="formRegister" class="form-content" method="post" action="https://formspree.io/mwkevddd">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" id="fm-name-1" name="_name" pattern="[a-zA-Z\s]+">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Email*</label>
+                                    <input type="email" id="fm-email" name="_replyto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Message*</label>
+                                    <textarea name="message" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <button id="fm-submit" class="form-button" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-right-item grid-child item-email">
+                    <div class="grid-item-title">Email</div>
+                    <div class="grid-item-content">
+                        <a class="grid-item-content-text underline" href="mailto:contact@pawankolhe.com">contact@pawankolhe.com</a>
+                        <img class="grid-item-icon" src="img/icons/email.svg">
+                    </div>
+                </div>
+                <div class="grid-child grid-right-item item-phone">
+                    <div class="grid-item-title">Twitter</div>
+                    <div class="grid-item-content">
+                        <a class="grid-item-content-text underline" target="_blank" href="https://twitter.com/Pawan_Kolhe">@Pawan_Kolhe</a>
+                        <img class="grid-item-icon" src="img/icons/twitter.svg">
+                    </div>
+                </div>
+                <div class="grid-child grid-right-item item-city">
+                    <div class="grid-item-title">Let's Have Coffee</div>
+                    <div class="grid-item-content">
+                        <span class="grid-item-content-text">Navi Mumbai, India</span>
+                        <img class="grid-item-icon" src="img/icons/location.svg">
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    
+    <!--==== EMPTY BLUE SPACE ====-->
+	<div id="container7" class="container">
+    	<div class="inner_container">
+    		<div class="social">
+			</div>
+        </div>
+    </div>
+    
+    <!--==== FOOTER ====-->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://www.facebook.com/PawanKolhe" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Pawan_Kolhe" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com/pawankolhe" target="_blank"><i class="fab fa-dribbble"></i></a>
+            <a href="https://www.instagram.com/pawan_kolhe/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/PawanKolhe" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/kolhepawan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/PawanKolhe" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.freecodecamp.org/pawankolhe" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+            <a href="https://codepen.io/pawankolhe/" target="_blank"><i class="fab fa-codepen"></i></a>
+            <a href="https://www.hackerrank.com/PawanKolhe" target="_blank"><i class="fab fa-hackerrank"></i></a>
+            <a href="https://www.codechef.com/users/pawankolhe" target="_blank"><span class="iconify" data-icon="simple-icons:codechef" data-inline="false"></span></a>
+            <!--<a href="snapchat://add/pawan0" class="tooltip"><i class="fab fa-snapchat-ghost"></i><p class="tooltiptext">pawan0</p></a>-->
+        </div>
+        <div class="footer-left">
+            <p>Handcrafted by Pawan Kolhe</p>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Back to Top button -->
+    <a onclick="scrollToElement('header')" class="anchor-links">
+        <nav id="go_to_top_button">
+            <i class="fas fa-arrow-up fa-lg"></i>
+        </nav>
+    </a>
+
+    <!--==== SCRIPTS ====-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/canvas.js"></script>
 </body>
 </html>
