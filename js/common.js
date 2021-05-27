@@ -9,7 +9,7 @@ const scrollToElement = (id) => document.getElementById(id).scrollIntoView();
             this.el = el;
             this.loopNum = 0;
             this.period = parseInt(period, 10) || 2000;
-            this.txt = 'a Web Developer.';
+            this.txt = 'a Flutter Developer.';
             this.tick();
             this.isDeleting = true;
         }
