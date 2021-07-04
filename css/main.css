@@ -20,12 +20,12 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: #3FBBF5;
+    background: #ce0e5f;
 }
 
 ::selection {
     color: #fff;
-    background: #3FBBF5;
+    background: #ce0e5f;
 }
 
 a {
